@@ -3,25 +3,29 @@ using System;
 class Program
 {
     /// <summary>
-    /// The main entry point for the program.
+    /// The main entry point for this project.
     /// </summary>
     /// <param name="args"></param>
     static void Main(string[] args)
     {
-        Fraction f1 = new Fraction();
-        Console.WriteLine(f1.GetFractionString());
-        Console.WriteLine(f1.GetDecimalValue());
+        Job job1 = new Job();
+        job1._jobTitle = "Software Engineer";
+        job1._company = "Microsoft";
+        job1._startYear = 2019;
+        job1._endYear = 2022;
 
-        Fraction f2 = new Fraction(5);
-        Console.WriteLine(f2.GetFractionString());
-        Console.WriteLine(f2.GetDecimalValue());
+        Job job2 = new Job();
+        job2._jobTitle = "Manager";
+        job2._company = "Apple";
+        job2._startYear = 2022;
+        job2._endYear = 2023;
 
-        Fraction f3 = new Fraction(3, 4);
-        Console.WriteLine(f3.GetFractionString());
-        Console.WriteLine(f3.GetDecimalValue());
+        Resume myResume = new Resume();
+        myResume._name = "Allison Rose";
 
-        Fraction f4 = new Fraction(1, 3);
-        Console.WriteLine(f4.GetFractionString());
-        Console.WriteLine(f4.GetDecimalValue());
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+
+        myResume.DisplayResumeDetails();
     }
 }
