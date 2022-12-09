@@ -82,19 +82,6 @@
         },
 
         {
-            "name": "Learning 01",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build-prepare-Learning01",
-            "program": "${workspaceFolder}/prepare/Learning01/bin/Debug/net6.0/Learning01.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/prepare/Learning01",
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "stopAtEntry": false
-        },
-
-        {
             "name": "Learning 02",
             "type": "coreclr",
             "request": "launch",
