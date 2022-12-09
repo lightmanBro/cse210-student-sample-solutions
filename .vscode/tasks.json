@@ -134,19 +134,6 @@
         },
 
         {
-            "label": "build-prepare-Learning06",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/prepare/Learning06/Learning06.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-
-        {
             "label": "build-prove-Develop02",
             "command": "dotnet",
             "type": "process",
