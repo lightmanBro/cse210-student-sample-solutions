@@ -2,10 +2,6 @@ using System;
 
 class Program
 {
-    /// <summary>
-    /// The main entry point for this project.
-    /// </summary>
-    /// <param name="args"></param>
     static void Main(string[] args)
     {
         Job job1 = new Job();
