@@ -16,7 +16,10 @@ public class Resume
         foreach (Job job in _jobs)
         {
             // This calls the Display method on each job
-            job.Display();
+            //this should work
+            job.DisplayJob();
+            /* i am making a correction to this code because I tried this   job.Display() method for close to 3 hrs
+            but it did not work until i changed it to job.DisplayJob(); then it worked. */
         }
     }
 }
